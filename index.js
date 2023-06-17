@@ -12,7 +12,9 @@ import adminRoutes from "./routes/admin/main.js"
 
 //data imports
 import User from "./models/admin/User.js"
-import { dataUser } from "./data/index.js"
+import Product from "./models/admin/Product.js"
+import ProductStat from "./models/admin/ProductStat.js"
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js"
 
 // CONFIGURATION
 const app = express();
@@ -37,6 +39,9 @@ app.listen(PORT, () => {
 
   // ONLY 1 TIME . MOCK DATA INSERTION
   // User.insertMany(dataUser);
+
+  // Product.insertMany(dataProduct);
+  // ProductStat.insertMany(dataProductStat);
 })
 
 
