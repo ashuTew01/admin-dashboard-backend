@@ -14,7 +14,8 @@ import adminRoutes from "./routes/admin/main.js"
 import User from "./models/admin/User.js"
 import Product from "./models/admin/Product.js"
 import ProductStat from "./models/admin/ProductStat.js"
-import { dataUser, dataProduct, dataProductStat } from "./data/index.js"
+import Transaction from "./models/admin/Transaction.js";
+import { dataUser, dataProduct, dataProductStat, dataTransaction } from "./data/index.js"
 
 // CONFIGURATION
 const app = express();
@@ -42,6 +43,8 @@ app.listen(PORT, () => {
 
   // Product.insertMany(dataProduct);
   // ProductStat.insertMany(dataProductStat);
+
+  // Transaction.insertMany(dataTransaction);
 })
 
 
