@@ -16,7 +16,8 @@ import Product from "./models/admin/Product.js"
 import ProductStat from "./models/admin/ProductStat.js"
 import Transaction from "./models/admin/Transaction.js";
 import OverallStat from "./models/admin/OverallStat.js";
-import { dataUser, dataProduct, dataProductStat, dataTransaction, dataOverallStat } from "./data/index.js"
+import AffiliateStat from "./models/admin/AffiliateStat.js";
+import { dataUser, dataProduct, dataProductStat, dataTransaction, dataOverallStat, dataAffiliateStat } from "./data/index.js"
 
 // CONFIGURATION
 const app = express();
@@ -48,6 +49,7 @@ app.listen(PORT, () => {
   // Transaction.insertMany(dataTransaction);
 
   // OverallStat.insertMany(dataOverallStat);
+  // AffiliateStat.insertMany(dataAffiliateStat);
 })
 
 
