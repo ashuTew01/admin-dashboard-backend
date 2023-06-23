@@ -15,7 +15,8 @@ import User from "./models/admin/User.js"
 import Product from "./models/admin/Product.js"
 import ProductStat from "./models/admin/ProductStat.js"
 import Transaction from "./models/admin/Transaction.js";
-import { dataUser, dataProduct, dataProductStat, dataTransaction } from "./data/index.js"
+import OverallStat from "./models/admin/OverallStat.js";
+import { dataUser, dataProduct, dataProductStat, dataTransaction, dataOverallStat } from "./data/index.js"
 
 // CONFIGURATION
 const app = express();
@@ -45,6 +46,8 @@ app.listen(PORT, () => {
   // ProductStat.insertMany(dataProductStat);
 
   // Transaction.insertMany(dataTransaction);
+
+  // OverallStat.insertMany(dataOverallStat);
 })
 
 

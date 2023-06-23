@@ -21,7 +21,7 @@ const OverallStatSchema = new mongoose.Schema(
       },
     ],
     salesByCategory: {
-      type: Map,
+      type: Map,    // a map is basically an object in javascript. This is how you create objects in mongoose.
       of: Number,
     },
   },
